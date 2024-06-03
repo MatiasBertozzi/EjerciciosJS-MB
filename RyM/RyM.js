@@ -12,7 +12,7 @@ let article=document.querySelector(".cartaPersonaje")
     section.innerHTML+=
     ` <article class="cartaPersonaje">
     <img src= "${data.results[i].image} " alt=''>
-     <p>Name:${data.results[i].name}  </p>
+     <p>Name:<a href="detalle.html?id=${data.results[i].id}">${data.results[i].name} </a> </p>
      <p>Status: ${data.results[i].status} </p>
 </article>`
 }
